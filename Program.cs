@@ -6,7 +6,7 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WinnerTicket.GetTickets();
         }
     }
 }
