@@ -20,14 +20,14 @@ public static class MyExtensions{
         if(oldlist.Length==0){
             return newlist.Count==7;
         }
-        for (int i=1; i<=2; i++){
+        for (int i=1; i<=2;i++){
               var charToAnalize=oldlist.Length>=i?oldlist.Substring(0,i):"";
               if(charToAnalize.IsInTheRange() && charToAnalize.IsUniqueNumber(newlist)){
                   newlist.Add(charToAnalize);
                   var oldnewvalue=oldlist.Substring(i);
                   return Search(oldnewvalue, newlist);
               }
-             else{
+            else{
                   return false;
             }
               
