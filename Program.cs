@@ -6,7 +6,8 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            WinnerTicket.GetTickets();
+            //WinnerTicket.GetTickets();
+            Observer.Run();
         }
     }
 }
