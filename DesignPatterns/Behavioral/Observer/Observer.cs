@@ -3,13 +3,15 @@ using System.Collections.Generic;
 public static class Observer{
     public static void Run(){
         var ibm =new IBM("Microsoft", 100);
-        ibm.Attach(new Investor("Igor"));
+        var investor= new Investor("Igor");
+        ibm.Attach(investor);       
         ibm.Price=300;
+        ibm.Price = 200;
     }
 }
 public abstract class Stock{
     private readonly string _symbol;
-    private readonly decimal _price;
+    private decimal _price;
     private List<IInvestor> _investors= new List<IInvestor>();
     public Stock (string symbol, decimal price){
         _symbol=symbol;
@@ -33,13 +35,13 @@ public abstract class Stock{
         get { return _price;}
     }
 
+    public string Symbol => _symbol;
+
     private void Notify(){
-        foreach(var investor in _investors){
-            inverstor.Update(this);
+        foreach(var inv in _investors){
+            inv.Update(this);
         }
     }
-
-    public string Symbol {get {return _symbol;}}
 }
 
 
@@ -63,7 +65,6 @@ public class Investor:IInvestor{
     }
 
     public void Update(Stock stock){
-        Console.WriteLine($"Price has been changed from {_stock.Price} to {stock.Price}");
-        this.Stock=stock;
+        Console.WriteLine($"Notification for {this._name} Price of {stock.Symbol} has been changed  to {stock.Price}");
     }
 }
