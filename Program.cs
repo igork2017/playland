@@ -7,7 +7,9 @@ namespace playland
         static void Main(string[] args)
         {
             //WinnerTicket.GetTickets();
-            Observer.Run();
+           // Observer.Run();
+            FizzFuzz.Run(17);
+
         }
     }
 }
