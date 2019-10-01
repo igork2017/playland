@@ -5,7 +5,7 @@ public static class FizzFuzz{
         for(int i=1;i<=x-1;i++){
             if(i%3==0 && i%5==0) Console.WriteLine("FizzFuzz");
             if(i%3==0) Console.WriteLine("Fizz");
-            if(i%5==0) Console.WriteLine("Fuaa");
+            if(i%5==0) Console.WriteLine("Fuzz");
             else Console.WriteLine(i.ToString());
         }
     }

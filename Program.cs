@@ -8,7 +8,9 @@ namespace playland
         {
             //WinnerTicket.GetTickets();
             //Observer.Run();
-            CommandUsage.Run();
+            //CommandUsage.Run();
+            //FizzFuzz.Run(17);
+            FindNdValueFromEnd.Run();
         }
     }
 }
