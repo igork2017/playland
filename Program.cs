@@ -12,7 +12,9 @@ namespace playland
             //FizzFuzz.Run(17);
             //FindNdValueFromEnd.Run();
             //FibonacciSerios.Run();
-            TrimpleSteps.Run();
+            //TrimpleSteps.Run();
+            //Robot.Run();
+            MagicIndex.Run();
         }
     }
 }
