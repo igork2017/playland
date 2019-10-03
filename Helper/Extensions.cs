@@ -2,20 +2,7 @@ using System;
 using System.Collections.Generic;
 
 public static class MyExtensions{
-    public static List<string> Filter(this List<string> t){
-        var result = new List<string>();
-        foreach(var s in t)
-        {
-            bool m = false;
-            var l = new List<string>();
-
-            m = Search(s, l);   
-            if(m)
-            result.Add(s);
-        }
-        return result;
-    }
-    
+     
     public static bool Search(string oldlist,List<string> newlist){
         if(oldlist.Length==0){
             return newlist.Count==7;
