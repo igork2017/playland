@@ -22,7 +22,8 @@ namespace playland
             //new UsingWater().Run();
             //new To3Some().Run();
             //new strStr().Run();
-            new RotateImage().Run();
+            //new RotateImage().Run();
+            new Anagrams().Run();
         }
     }
 }
