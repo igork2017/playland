@@ -23,7 +23,8 @@ namespace playland
             //new To3Some().Run();
             //new strStr().Run();
             //new RotateImage().Run();
-            new Anagrams().Run();
+            //new Anagrams().Run();
+            new MinimumWindow().Run();
         }
     }
 }
