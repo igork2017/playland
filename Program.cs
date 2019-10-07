@@ -20,7 +20,9 @@ namespace playland
             //new IntegerToRoman().Run();
             //new RomanToArabics().Run();
             //new UsingWater().Run();
-            new To3Some().Run();
+            //new To3Some().Run();
+            //new strStr().Run();
+            new RotateImage().Run();
         }
     }
 }
