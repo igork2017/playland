@@ -61,4 +61,49 @@ public static class WinnerTicket{
         }
         return isValid;            
     }
+    
+    private static int[] PatternGenerator(int doubleDigits, int singleDigits){
+        var arr=new int[7];
+        for(int i=0;i<doubleDigits;i++){
+            arr[i]=2;
+        }
+        for(int j=doubleDigits;j<singleDigits;j++){
+            arr[j]=1;
+        }
+        return arr;
+    }
+
+    private static int[] ShiftArray(int[] patternArray){
+        var length=patternArray.Length;
+        var last=patternArray[length-1];
+        for(int i=length-2;i<1;i--){
+            patternArray[i+1]=patternArray[i];
+        }
+        patternArray[0]=last;
+        return patternArray;
+    }
+    private static int[] GetTicket(string origin){
+        var originLength=origin.Length;
+        var ticketLength=7;
+        //check out if string is out of range
+        if(originLength<7 || originLength>14){
+            return null;
+        }
+
+        int doubleDigits = originLength % ticketLength;
+        int singleDigits= originLength-doubleDigits;
+        var patternArray= PatternGenerator(doubleDigits, singleDigits);
+        int index=0;
+        var checkList=new List<int>();
+        int candidate;
+        
+        for(int i=0;i<patternArray.Length;i++){
+            var subValue=patternArray[i];
+            Int32.TryParse(origin.Substring(index,subValue), out candidate);
+
+            index=index+subValue;
+        }
+        
+        return null;
+    }
 }

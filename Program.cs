@@ -6,7 +6,7 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            WinnerTicket.GetTickets();
+            //WinnerTicket.GetTickets();
             //Observer.Run();
             //CommandUsage.Run();
             //FizzFuzz.Run(17);
@@ -15,6 +15,12 @@ namespace playland
             //TrimpleSteps.Run();
             //Robot.Run();
             //MagicIndex.Run();
+            //TwoSums.Run();
+            //StringToInteger.Run();
+            //new IntegerToRoman().Run();
+            //new RomanToArabics().Run();
+            //new UsingWater().Run();
+            new To3Some().Run();
         }
     }
 }
