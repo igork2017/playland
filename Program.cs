@@ -15,6 +15,12 @@ namespace playland
             //TrimpleSteps.Run();
             //Robot.Run();
             //MagicIndex.Run();
+            //TwoSums.Run();
+            //StringToInteger.Run();
+            //new IntegerToRoman().Run();
+            //new RomanToArabics().Run();
+            //new UsingWater().Run();
+            new To3Some().Run();
         }
     }
 }
