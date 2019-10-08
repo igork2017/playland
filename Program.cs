@@ -28,7 +28,8 @@ namespace playland
             //new CompareVersions().Run();
             //new ProductOfArray().Run();
             //new MissingNumbers().Run();
-            new NumbersToWords().Run();
+            //new NumbersToWords().Run();
+            new FirstUniqueCharacter().Run();
         }
     }
 }
