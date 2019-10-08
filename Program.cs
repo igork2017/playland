@@ -25,7 +25,9 @@ namespace playland
             //new RotateImage().Run();
             //new Anagrams().Run();
             //new MinimumWindow().Run();
-            new CompareVersions().Run();
+            //new CompareVersions().Run();
+            //new ProductOfArray().Run();
+            new MissingNumbers().Run();
         }
     }
 }
