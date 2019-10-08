@@ -29,7 +29,8 @@ namespace playland
             //new ProductOfArray().Run();
             //new MissingNumbers().Run();
             //new NumbersToWords().Run();
-            new FirstUniqueCharacter().Run();
+            //new FirstUniqueCharacter().Run();
+            new ValidParentheses().Run();
         }
     }
 }
