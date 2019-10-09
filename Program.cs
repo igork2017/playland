@@ -31,7 +31,8 @@ namespace playland
             //new NumbersToWords().Run();
             //new FirstUniqueCharacter().Run();
             //new ValidParentheses().Run();
-            new MostCommonWords().Run();
+            //new MostCommonWords().Run();
+            new LogSorting().Run();
         }
     }
 }

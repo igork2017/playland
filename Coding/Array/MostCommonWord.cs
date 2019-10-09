@@ -59,14 +59,14 @@ public class MostCommonWords{
     public string mostCommonWord2(string paragraph, string[] banned){
         paragraph += ".";
 
-        Set<String> banset = new HashSet();
+        /* Set<String> banset = new HashSet();
         for (String word: banned) banset.add(word);
-        Map<String, Integer> count = new HashMap();
+        Map<String, Integer> count = new HashMap(); */
 
         String ans = "";
         int ansfreq = 0;
 
-        StringBuilder word = new StringBuilder();
+        /* StringBuilder word = new StringBuilder();
         for (char c: paragraph.toCharArray()) {
             if (Character.isLetter(c)) {
                 word.append(Character.toLowerCase(c));
@@ -82,7 +82,7 @@ public class MostCommonWords{
                 word = new StringBuilder();
             }
         }
-
+ */
         return ans;
     }
 }
