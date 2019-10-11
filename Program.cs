@@ -20,7 +20,7 @@ namespace playland
             //new IntegerToRoman().Run();
             //new RomanToArabics().Run();
             //new UsingWater().Run();
-            new To3Some().Run();
+            //new To3Some().Run();
             //new strStr().Run();
             //new RotateImage().Run();
             //new Anagrams().Run();
@@ -34,6 +34,7 @@ namespace playland
             //new MostCommonWords().Run();
             //new LogSorting().Run();
             //new TrappingRainWater().Run();
+            new TwoNumbers().Run();
         }
     }
 }
