@@ -34,7 +34,8 @@ namespace playland
             //new MostCommonWords().Run();
             //new LogSorting().Run();
             //new TrappingRainWater().Run();
-            new TwoNumbers().Run();
+            //new TwoNumbers().Run();
+            new MergeTwoSortedLists().Run();
         }
     }
 }

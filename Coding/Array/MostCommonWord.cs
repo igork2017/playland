@@ -64,7 +64,6 @@ public class MostCommonWords{
         Map<String, Integer> count = new HashMap(); */
 
         String ans = "";
-        int ansfreq = 0;
 
         /* StringBuilder word = new StringBuilder();
         for (char c: paragraph.toCharArray()) {
