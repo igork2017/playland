@@ -38,7 +38,9 @@ namespace playland
             //new MergeTwoSortedLists().Run();
             //new ReverseNodes().Run();
             //new ReverseLinkedList().Run();
-            new MergeKSortedLists().Run();
+            //new MergeKSortedLists().Run();
+            //new ValidateBST().Run();
+            new SymmetricTree().Run();
         }
     }
 }
