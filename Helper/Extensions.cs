@@ -4,10 +4,9 @@ using System.Collections.Generic;
 public static class MyExtensions{
      
     public static bool Search(string oldlist,List<string> newlist){
-        if(oldlist.Length==0){
-            return newlist.Count==7;
-        }
-        for (int i=1; i<=2;i++){
+        if(oldlist.Length==0) return newlist.Count==7;
+        
+        /* for (int i=1;i<length; i++){
               var charToAnalize=oldlist.Length>=i?oldlist.Substring(0,i):"";
               if(charToAnalize.IsInTheRange() && charToAnalize.IsUniqueNumber(newlist)){
                   newlist.Add(charToAnalize);
@@ -18,7 +17,7 @@ public static class MyExtensions{
                   return false;
             }
               
-        }
+        } */
         return false;
     }
     

@@ -35,7 +35,10 @@ namespace playland
             //new LogSorting().Run();
             //new TrappingRainWater().Run();
             //new TwoNumbers().Run();
-            new MergeTwoSortedLists().Run();
+            //new MergeTwoSortedLists().Run();
+            //new ReverseNodes().Run();
+            //new ReverseLinkedList().Run();
+            new MergeKSortedLists().Run();
         }
     }
 }
