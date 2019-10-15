@@ -40,7 +40,9 @@ namespace playland
             //new ReverseLinkedList().Run();
             //new MergeKSortedLists().Run();
             //new ValidateBST().Run();
-            new SymmetricTree().Run();
+            //new SymmetricTree().Run();
+            //new BinaryTreeTraversal().Run();
+            new Zigzag().Run();
         }
     }
 }
