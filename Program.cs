@@ -42,7 +42,8 @@ namespace playland
             //new ValidateBST().Run();
             //new SymmetricTree().Run();
             //new BinaryTreeTraversal().Run();
-            new Zigzag().Run();
+            //new Zigzag().Run();
+            new WordLadder().Run();
         }
     }
 }
