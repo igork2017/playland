@@ -43,7 +43,9 @@ namespace playland
             //new SymmetricTree().Run();
             //new BinaryTreeTraversal().Run();
             //new Zigzag().Run();
-            new WordLadder().Run();
+            //new WordLadder().Run();
+            //new WordLadderLength().Run();
+            new NumberOfIslands().Run();
         }
     }
 }
