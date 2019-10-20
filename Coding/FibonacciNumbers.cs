@@ -1,11 +1,11 @@
 using System;
-public static class FibonacciSerios{
-    public static void Run(){
+public class FibonacciSerios{
+    public void Run(){
       //fib(10);
-      Console.WriteLine(fib2(6));  
+      Console.WriteLine(fib2(5));  
     }
     
-    public static void fib(int len){
+    public void fib(int len){
         
         int n1=0, n2=1, n3=0;
         Console.WriteLine(n1);
@@ -18,7 +18,7 @@ public static class FibonacciSerios{
         }
     }
 
-    public static int fib2(int x){
+    public int fib2(int x){
         if(x==0) return 0;
         if(x==1) return 1;
         return fib2(x-1) + fib2(x-2);

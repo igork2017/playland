@@ -1,8 +1,43 @@
 using System;
 using System.Collections.Generic;
 
-public static class WinnerTicket{
-    public static void GetTickets(){
+public class WinnerTicket{
+
+    public void Run(){
+        string[] strArray= {"1", "42", "100848", "4938532894754", "1234567000000", "472844278465445"};
+        var ticketLength=7;
+        FindTicket(strArray,ticketLength);
+
+    }
+
+    public IList<IList<string>> FindTicket(string[] strarray, int length){
+        var result =new List<IList<string>>();
+        if(strarray.Length==0) return result;
+        var root = new TreeNode(-1);
+
+        foreach(var s in strarray){
+            if(s.Length<7 || s.Length>14) continue;
+            var uniqueList=new List<int>();
+            int right;
+            if(Int32.TryParse(s.Substring(0,1),out var left){
+
+            }
+            Int32.TryParse(s.Substring(1,2), out right);
+            
+            root.left=new TreeNode
+        }
+        return result;
+    }
+
+    public bool CreateTree(string word,List<int> numbers,  int length, bool single){
+        if(word.Length==0 && numbers.Count!=length) return false;
+        if(word.Length==1 && !single) return false;
+        if(Int32.TryParse(s.Substring(0,1),out var left){
+
+        }
+
+    }
+    public void GetTickets(){
         string[] strArray= {"1", "42", "100848", "4938532894754", "1234567000000", "472844278465445"};
         LotteryPics(strArray);
         Console.WriteLine("Done!");
@@ -21,13 +56,13 @@ public static class WinnerTicket{
         }
     }
 
-    private static bool Checkout(List<int> result, int candidate) {
+    private bool Checkout(List<int> result, int candidate) {
         if(!result.Contains(candidate) && candidate>0 && candidate<60){
             return true;
         }
         return false;
     }
-    private static void Remove(List<int> result , string charN){
+    private void Remove(List<int> result , string charN){
          int intN;
         Int32.TryParse(charN, out intN);
         if(result.Contains(intN)){
@@ -106,4 +141,6 @@ public static class WinnerTicket{
         
         return null;
     }
+
+
 }

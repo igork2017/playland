@@ -11,7 +11,7 @@ namespace playland
             //CommandUsage.Run();
             //FizzFuzz.Run(17);
             //FindNdValueFromEnd.Run();
-            //FibonacciSerios.Run();
+            new FibonacciSerios().Run();
             //TrimpleSteps.Run();
             //Robot.Run();
             //MagicIndex.Run();
@@ -45,7 +45,7 @@ namespace playland
             //new Zigzag().Run();
             //new WordLadder().Run();
             //new WordLadderLength().Run();
-            new NumberOfIslands().Run();
+            //new NumberOfIslands().Run();
         }
     }
 }
