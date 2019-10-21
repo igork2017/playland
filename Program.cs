@@ -6,12 +6,12 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            //WinnerTicket.GetTickets();
+            new WinnerTicket().Run();
             //Observer.Run();
             //CommandUsage.Run();
             //FizzFuzz.Run(17);
             //FindNdValueFromEnd.Run();
-            new FibonacciSerios().Run();
+            //new FibonacciSerios().Run();
             //TrimpleSteps.Run();
             //Robot.Run();
             //MagicIndex.Run();
