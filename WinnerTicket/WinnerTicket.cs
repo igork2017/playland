@@ -31,38 +31,17 @@ public class WinnerTicket{
 
     public bool CreateTree(string word, List<int> list){
         if(list.Count==7 && word.Length==0) return true;
-        var result = false;
-        var useDouble = word.Length<2? false:true;
-        int left;
-        int right;
-        if(Int32.TryParse(word.Substring(0,1),out left)){       
-            var newWord=word.Substring(1);
-            var isValid=!list.Contains(left) && list.Count<7;
-            if(isValid){
-                 list.Add(left);   
-                 result=CreateTree(newWord, list);
-                 if(!result){
-                     list.Remove(left);
-                    }
-                else{
-                    return true;
-                }
-            }                
-        }
-        if(useDouble && Int32.TryParse(word.Substring(0,2),out right)){       
-            var newWord=word.Substring(2);
-            var isValid= right<60! && !list.Contains(right) && list.Count<7;
-            if(isValid){
-                 list.Add(right);   
-                 result=CreateTree(newWord, list);
-                 if(!result){
-                     list.Remove(right);
-                    }
-                else{
-                    return true;
-                }
-            }    
-               
+        int current;
+        for(int i=1; i<=2;i++){
+           if(word.Length>=i && Int32.TryParse(word.Substring(0,i), out current)){
+                var isValid=current<60 && !list.Contains(current) && list.Count<7;
+                if(isValid){
+                 list.Add(current); 
+                 var newWord=word.Substring(i);                 
+                 if(CreateTree(newWord, list)) return true;
+                 list.Remove(current);
+                }  
+            }
         }
        return false; 
     }
