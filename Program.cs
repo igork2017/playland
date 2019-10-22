@@ -6,7 +6,7 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            new WinnerTicket().Run();
+            //new WinnerTicket().Run();
             //Observer.Run();
             //CommandUsage.Run();
             //FizzFuzz.Run(17);
@@ -43,9 +43,10 @@ namespace playland
             //new SymmetricTree().Run();
             //new BinaryTreeTraversal().Run();
             //new Zigzag().Run();
-            //new WordLadder().Run();
+            //new WordsLadder().Run();
             //new WordLadderLength().Run();
             //new NumberOfIslands().Run();
+            new LowestCommon().Run();
         }
     }
 }
