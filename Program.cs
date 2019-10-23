@@ -46,7 +46,10 @@ namespace playland
             //new WordsLadder().Run();
             //new WordLadderLength().Run();
             //new NumberOfIslands().Run();
-            new LowestCommon().Run();
+            //new LowestCommon().Run();
+            //new CourseSchedule().Run();
+            //new DiameterOfTree().Run();
+            new CutOffTrees().Run();
         }
     }
 }
