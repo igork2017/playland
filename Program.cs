@@ -49,7 +49,8 @@ namespace playland
             //new LowestCommon().Run();
             //new CourseSchedule().Run();
             //new DiameterOfTree().Run();
-            new CutOffTrees().Run();
+            //new CutOffTrees().Run();
+            new FoodFeel().Run();
         }
     }
 }
