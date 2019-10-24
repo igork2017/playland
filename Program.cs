@@ -50,7 +50,10 @@ namespace playland
             //new CourseSchedule().Run();
             //new DiameterOfTree().Run();
             //new CutOffTrees().Run();
-            new FoodFeel().Run();
+            //new FoodFeel().Run();
+            //new LetterComb().Run();
+            //new Parentheses().Run();
+            new WordSearch().Run();
         }
     }
 }
