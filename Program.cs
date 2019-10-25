@@ -53,7 +53,10 @@ namespace playland
             //new FoodFeel().Run();
             //new LetterComb().Run();
             //new Parentheses().Run();
-            new WordSearch().Run();
+            //new WordSearch().Run();
+            //new SearchWord2().Run();
+            //new FindMedian().Run();
+            new SearchInRotated().Run();
         }
     }
 }
