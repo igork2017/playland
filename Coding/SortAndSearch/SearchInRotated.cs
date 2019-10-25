@@ -1,8 +1,6 @@
 using System;
 
 public class SearchInRotated {
-  int [] nums;
-  int target;
 
 public void Run(){
    var nums =new int[] {4,5,6,7,0,1,2};
@@ -11,31 +9,29 @@ public void Run(){
 }
 
 public int Search(int[] nums, int target) {
-    this.nums = nums;
-    this.target = target;
 
     int n = nums.Length;
 
     if (n == 0)
       return -1;
     if (n == 1)
-      return this.nums[0] == target ? 0 : -1;
+      return nums[0] == target ? 0 : -1;
 
-    int rotate_index = find_rotate_index(0, n - 1);
+    int rotate_index = find_rotate_index(nums, 0, n - 1);
 
     // if target is the smallest element
     if (nums[rotate_index] == target)
       return rotate_index;
     // if array is not rotated, search in the entire array
     if (rotate_index == 0)
-      return search(0, n - 1);
+      return search(nums, 0, n - 1, target);
     if (target < nums[0])
       // search in the right side
-      return search(rotate_index, n - 1);
+      return search(nums, rotate_index, n - 1, target);
     // search in the left side
-    return search(0, rotate_index);    
+    return search(nums, 0, rotate_index,target);    
 }
-  public int find_rotate_index(int left, int right) {
+  public int find_rotate_index(int[] nums, int left, int right) {
     if (nums[left] < nums[right])
       return 0;
 
@@ -53,7 +49,7 @@ public int Search(int[] nums, int target) {
     return 0;
   }
 
-  public int search(int left, int right) {
+  public int search(int[] nums, int left, int right, int target) {
     /*
     Binary search
     */
