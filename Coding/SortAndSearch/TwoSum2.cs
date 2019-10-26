@@ -15,7 +15,7 @@ public class TwoSum2{
         var startIndex=0;
         var endIndex=numbers.Length-1;
         while(startIndex<endIndex){
-            if(numbers[startIndex] +numbers[endIndex]==target) return new int[]{startIndex,endIndex};
+            if(numbers[startIndex] +numbers[endIndex]==target) return new int[]{startIndex +1,endIndex+1};
             if(numbers[startIndex] +numbers[endIndex]>target) endIndex--;
             if(numbers[startIndex] +numbers[endIndex]<target) startIndex++;
         }

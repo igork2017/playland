@@ -58,7 +58,8 @@ namespace playland
             //new FindMedian().Run();
             //new SearchInRotated().Run();
             //new MergeInterval().Run();
-            new TwoSum2().Run();
+            //new TwoSum2().Run();
+            new ToKFriequentElements().Run();
         }
     }
 }
