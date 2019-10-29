@@ -59,7 +59,13 @@ namespace playland
             //new SearchInRotated().Run();
             //new MergeInterval().Run();
             //new TwoSum2().Run();
-            new ToKFriequentElements().Run();
+            //new ToKFriequentElements().Run();
+            //new KClosestPoints().Run();
+            //new LongestPalidromic().Run();
+            //new MaximumSubArray().Run();
+            //new BestTimeToBuyAndSell().Run();
+            //new WordBreak().Run();
+            new CoinChangeT().Run();
         }
     }
 }
