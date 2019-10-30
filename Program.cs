@@ -65,7 +65,9 @@ namespace playland
             //new MaximumSubArray().Run();
             //new BestTimeToBuyAndSell().Run();
             //new WordBreak().Run();
-            new CoinChangeT().Run();
+            //new CoinChangeT().Run();
+            new LRUCacheMain().Run();
+            
         }
     }
 }
