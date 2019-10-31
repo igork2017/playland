@@ -66,8 +66,11 @@ namespace playland
             //new BestTimeToBuyAndSell().Run();
             //new WordBreak().Run();
             //new CoinChangeT().Run();
-            new LRUCacheMain().Run();
-            
+            //new LRUCacheMain().Run();
+            //new MinStack2().Run();
+            //new MinStackSample().Run();
+            //new FindMedianFromFileStream().Run();
+            new SerializeDeserialize().Run();
         }
     }
 }
