@@ -70,7 +70,11 @@ namespace playland
             //new MinStack2().Run();
             //new MinStackSample().Run();
             //new FindMedianFromFileStream().Run();
-            new SerializeDeserialize().Run();
+            //new SerializeDeserialize().Run();
+            //new CriticalConnections().Run();
+            //new ReverseString2().Run();
+            //new SearchSubtree().Run();
+            new DietPlan().Run();
         }
     }
 }

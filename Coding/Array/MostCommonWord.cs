@@ -3,11 +3,58 @@ using System.Collections.Generic;
 
 public class MostCommonWords{
     public void Run(){
-        var paragraph = "a.";
-        var banned =new string []{"hit"};
-       Console.WriteLine(MostCommonWord(paragraph, banned));
+        var paragraph = "a, a, a, a, a, b,b,b,b, c, c, c, d";
+        var banned =new string []{"a"};
+       Console.WriteLine(MostCommonWord3(paragraph, banned));
     }
 
+    public string MostCommonWord3(string paragraph, string[] banned){
+        var punctuation=new string[]{"!","?","'",",",";","."};
+        if(paragraph.Length==0) return "";
+        var paraArray=paragraph.Split(" ");
+        var finalList=new List<string>();     
+        var dict= new Dictionary<string,int>();
+        foreach(var w in paraArray){
+            CreateWordList(w, finalList, punctuation);
+        }
+        var length = finalList.Count;
+        if(length==1) return RemovePunctuation(paraArray[0].Trim().ToLower(), punctuation);
+        for(int i=0;i<finalList.Count;i++){
+            var t=finalList[i].Trim().ToLower();
+            if(IsBanned(t, banned)) continue;
+            if(dict.ContainsKey(t)){
+                dict[t]= dict[t]+1;
+            }
+            else{
+                dict.Add(t, 1);
+            }
+        }
+        int max=0;
+        var result="";
+        foreach(var k in dict.Keys){
+            if(max<dict[k]){
+                max=dict[k];
+                result=k;
+            }
+        }
+        return result;
+    }
+
+    private void CreateWordList(string candidate, List<string> list, string[] punct){
+         var hasPunctuation=false;
+         foreach(var s in punct){
+            var index=candidate.IndexOf(s);
+            if(index>0){
+                hasPunctuation=true;
+                var arr= candidate.Split(s);
+                foreach(var t in arr){
+                    if(t!="") list.Add(t);
+                }
+            }
+                            
+        }
+        if(!hasPunctuation) list.Add(candidate);
+    }
     public string MostCommonWord(string paragraph, string[] banned){
         var punctuation=new string[]{"!","?","'",",",";","."};
         if(paragraph.Length==0) return "";
