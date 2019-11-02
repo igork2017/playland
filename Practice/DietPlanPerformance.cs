@@ -7,11 +7,14 @@ public class DietPlan{
         var k=6;
         var lower=5;
         var upper=37; */
-        var calories= new int[]{1,2,3,4,5};
+/*         var calories= new int[]{1,2,3,4,5};
         var k=1;
         var lower=3;
         var upper=3;
-        Console.WriteLine(DietPlanPerformance2(calories,k,lower,upper));
+        Console.WriteLine(DietPlanPerformance2(calories,k,lower,upper)); */
+        var stones= new int[]{3,2,4,1};
+        var K=2;
+        MergeStones(stones, K);
     }
     public int DietPlanPerformance(int[] calories, int k, int lower, int upper) {
         var total=0;
@@ -54,5 +57,32 @@ public class DietPlan{
             end++;
         }
         return total;
+    }
+
+     public int MergeStones(int[] stones, int K) {
+        var length=stones.Length;
+        if(length<K || length%K>0) return -1;
+        var minCost=Int32.MaxValue;
+        var start=0;
+        var end=K;
+        for(int i=0;i<length-(K-1);i++){
+            var startSum=i>0?stones[i-1]:0;
+            var temp=startSum+CalculateSum(stones, start, end, K);
+            if(temp<minCost) minCost=temp;
+        }    
+        return minCost;
+    }
+    
+    private int CalculateSum(int[] stones, int start, int end, int k)     {
+            if(end>stones.Length) return 0;
+            var result=0;
+            
+            for(int i=start;i<end;i++){
+                result=result+stones[i];
+            }
+            
+            return result+CalculateSum(stones, start+k,end+k,k);
+            
+        
     }
 }
