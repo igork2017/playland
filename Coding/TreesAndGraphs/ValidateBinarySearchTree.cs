@@ -12,7 +12,7 @@ public class ValidateBST{
     public bool IsValidBST(TreeNode root) {
      var stack = new Stack<TreeNode>();
      double inorder = -Double.MaxValue;
-        while (!(stack.Count==0) || root != null) {
+        while (stack.Count>0 || root != null) {
             while (root != null) {
                 stack.Push(root);
                 root = root.left;

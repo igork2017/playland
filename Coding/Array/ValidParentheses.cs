@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class ValidParentheses{
     public void Run(){
-        Console.WriteLine(IsValid(""));
+        Console.WriteLine(IsValid("[])"));
     }
     private string parentheses="(){}[]";
     private bool IsValid(string s)
@@ -25,7 +25,8 @@ public class ValidParentheses{
             var openCount=listOpenIndex.Count;
             index=parentheses.IndexOf(t);
             if(index%2>0){ 
-                if(parentheses.Substring(index-1,1) == s.Substring(i-1,1) || listOpenIndex[openCount-1]==index-1){
+                if(openCount==0) return false;
+                if(parentheses.Substring(index-1,1) == s.Substring(i-1,1) || (openCount>0 && listOpenIndex[openCount-1]==index-1)){
                     listOpenIndex.RemoveAt(openCount-1);
                 }
                 else{

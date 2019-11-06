@@ -74,8 +74,10 @@ namespace playland
             //new CriticalConnections().Run();
             //new ReverseString2().Run();
             //new SearchSubtree().Run();
-            new DietPlan().Run();
-
+            //new DietPlan().Run();
+            //new MergeStonesC().Run();
+            //new Maze2().Run();
+            new NumberOfEquivalentDominos().Run();
         }
     }
 }

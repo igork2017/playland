@@ -9,7 +9,7 @@ public class CourseSchedule{
             new int[]{0,1}
         };
        // var result = findOrder(numCourses, prerequisites);
-        Console.WriteLine(CanFinish(numCourses,prerequisites));
+       //findOrder(numCourses,prerequisites);  
     }
     public bool CanFinish(int numCourses, int[][] prerequisites) {
         var graph=MakeGraph(numCourses,prerequisites);
@@ -60,6 +60,7 @@ public class CourseSchedule{
             foreach(var neigh in graph[node])
                 if((onpath.ContainsKey(neigh) && onpath[neigh]) || dfs(graph,neigh,onpath,visited,toposort)) return true;
         toposort.Add(node);
+    
         return onpath[node]=false;
     }
 
@@ -73,4 +74,5 @@ public class CourseSchedule{
         }
         return toposort;
     }
+
 }
