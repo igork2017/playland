@@ -64,7 +64,7 @@ public class NumberOfEquivalentDominos{
         if(node.right!=null){
            sum+=node.right.val;
         }
-            
+       
         if(sum<limit){
              if(node.left!=null && node.left.val<=sum) node.left=null;   
              if(node.right!=null && node.right.val<=sum) node.right=null;

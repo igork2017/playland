@@ -47,7 +47,8 @@ public static class TwoSums {
         if (map.ContainsKey(complement)) {
             return new int[] { map[complement], i };
         }
-        map.Add(nums[i], i);
+        if(!map.ContainsKey(nums[i]))
+            map.Add(nums[i], i);
     }
     throw new ArgumentException("No two sum solution");
 
