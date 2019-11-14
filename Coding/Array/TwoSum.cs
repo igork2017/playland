@@ -14,7 +14,7 @@ public static class TwoSums {
 
 
     }
-    public static int[] TwoSum(int[] nums, int target) {
+   /*  public static int[] TwoSum(int[] nums, int target) {
         var numsLength=nums.Length;
         if(numsLength<=1){
             return null;
@@ -37,7 +37,7 @@ public static class TwoSums {
         }
         
         return null;
-    }
+    } */
 
     public static int[] NewApproach(int[] nums, int target){
       

@@ -27,11 +27,3 @@ public class RoundHole{
     }
 }
 
-public class SquarePegAdapter{
-    private SquarePeg squarePeg;
-
-    public SquarePegAdapter(double w){
-        squarePeg=new SquarePeg(w);
-    }
-
-}

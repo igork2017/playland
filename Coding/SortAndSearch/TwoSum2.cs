@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class TwoSum2{
+/* public class TwoSum2{
     public void Run(){
         var numbers = new int[]{2,7,11,15};
         var target = 9;
@@ -21,4 +21,4 @@ public class TwoSum2{
         }
         return new int[]{-1,-1};
     }
-}
+} */

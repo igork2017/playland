@@ -17,7 +17,7 @@ public static class StringToInteger{
         Console.WriteLine(MyAtoi(input5));
         Console.WriteLine(MyAtoi("+"));
     }   
-    public static int? MyAtoi(string str) { 
+    public static int MyAtoi(string str) { 
         bool hasNumber=false;
         bool isNegative=false;
         var minus='-';

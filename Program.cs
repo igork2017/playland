@@ -6,7 +6,7 @@ namespace playland
     {
         static void Main(string[] args)
         {
-            new PrototypeExample().Run();
+            //new PrototypeExample().Run();
             //new WinnerTicket().Run();
             //Observer.Run();
             //CommandUsage.Run();
@@ -79,8 +79,12 @@ namespace playland
             //new MergeStonesC().Run();
             //new Maze2().Run();
             //new NumberOfEquivalentDominos().Run();
-            //new NumberOfDiceRolls().Run();
+            new NumberOfDiceRolls().Run();
             //new Find132().Run();
+            //new LongestSubstringWithoutRepeating().Run();
+            //new SingleNonDuplicateClass().Run();
+            //new LastStoneWeightClass().Run();
+            //new Solution15().Run();
         }
     }
 }
