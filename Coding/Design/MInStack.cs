@@ -11,7 +11,7 @@ public class MinStackSample{
         minStack.Pop();
         Console.WriteLine(minStack.Top());      // Returns 0.
         Console.WriteLine(minStack.GetMin());   // Returns -2. */
-        minStack.Push(2147483646);
+/*         minStack.Push(2147483646);
         minStack.Push(2147483646);
         minStack.Push(2147483647);
         Console.WriteLine(minStack.Top()); //2147483647
@@ -27,12 +27,12 @@ public class MinStackSample{
         Console.WriteLine(minStack.Top()); // -2147483648
         Console.WriteLine(minStack.GetMin()); // -2147483648
         minStack.Pop();
-        Console.WriteLine(minStack.GetMin()); // 2147483647
+        Console.WriteLine(minStack.GetMin()); // 2147483647 */
        
     }
 }
 public class MinStack {
-    private Stack<int> stack;
+  /*   private Stack<int> stack;
     private int min;
     public MinStack() {
         stack=new Stack<int>();
@@ -74,5 +74,5 @@ public class MinStack {
     public int GetMin() {
         if(stack.Count==0) return Int32.MinValue;
         return min;
-    }
+    } */
 }

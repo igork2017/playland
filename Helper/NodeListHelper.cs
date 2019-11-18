@@ -33,6 +33,11 @@ public class Node{
     public Node(int x){
         val=x;
     }
+    public Node(int x, Node _next, Node _random){
+        val=x;
+        next=_next;
+        random=_random;
+    }
 }
 
  public class TreeNode {
